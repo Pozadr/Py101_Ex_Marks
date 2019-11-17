@@ -41,10 +41,10 @@ def main(args):
     m = median(marks)
     v = variance(marks, avg)
     dev = deviation(marks, avg)
-    print('\nAverage: {0:5.2f}'.format(avg))  # https://pyformat.info/
-    print('Median: {0:5.2f}'.format(m))
-    print('Variance: {0:5.2f}'.format(v))
-    print('Deviation: {0:5.2f}'.format(dev))
+    print('\nAverage:{0:5.2f}'.format(avg))  # https://pyformat.info/
+    print('Median:{0:5.2f}'.format(m))
+    print('Variance:{0:5.2f}'.format(v))
+    print('Deviation:{0:5.2f}'.format(dev))
 
 if __name__ == '__main__':
     import sys
