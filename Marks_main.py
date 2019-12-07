@@ -1,4 +1,4 @@
-from Marks_functions import printOnScreen, average, median, variance, deviation
+from Marks_functions import printOnScreen, average, median, variance, deviation,singleMarkDeviation
 
 def main(args):
     subjects = set(['polish', 'english', 'mathematic', 'physics' ])
@@ -19,7 +19,7 @@ def main(args):
             else:
                 break
     marks = []  # definition
-    mark = None  #  variable steering a loop and to download the marks
+    mark = None  #  variable steering a loop to download the marks
     print('\nTo interrupt input of marks input ''0''.')
 
     while not mark:
@@ -45,6 +45,7 @@ def main(args):
     print('Median:{0:5.2f}'.format(m))
     print('Variance:{0:5.2f}'.format(v))
     print('Deviation:{0:5.2f}'.format(dev))
+    singleMarkDeviation(marks, avg)
 
 if __name__ == '__main__':
     import sys
