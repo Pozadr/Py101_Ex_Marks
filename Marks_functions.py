@@ -55,15 +55,10 @@ def deviation(marks, average):
     v = variance(marks, average)
     return math.sqrt(v)
 
-def singleMarkDeviation(marks, average):
+def singleMarkDeviation(mark, average):
     '''
         Deviation is the square root of the variance.
         In this case counted for 1 element of set.
     '''
-    print() # for good view in console
-    for mark in marks:
-        v = math.sqrt(((mark - average)**2))
-        print('For mark: {0} Deviation: {1:5.2f}'.format(mark, v))
-    # v = -(mark - average)
-    # same like v = math.sqrt((mark - average)**2)
-    return None
+    
+     return math.sqrt(((mark - average)**2))

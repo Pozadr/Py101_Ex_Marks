@@ -45,7 +45,11 @@ def main(args):
     print('Median:{0:5.2f}'.format(m))
     print('Variance:{0:5.2f}'.format(v))
     print('Deviation:{0:5.2f}'.format(dev))
-    singleMarkDeviation(marks, avg)
+    print() # '\n' for better console view
+
+    for mark in marks:
+        v = singleMarkDeviation(mark, avg)
+        print('For mark: {0} Deviation: {1:5.2f}'.format(mark, v))
 
 if __name__ == '__main__':
     import sys
